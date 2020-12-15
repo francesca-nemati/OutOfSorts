@@ -7,14 +7,18 @@ public class Sorts {
 
   public static void bubbleSort(int[] data) {
     int swap;
+    boolean swapped = false;
     for (int i = 0; i < data.length; i++) {
       for (int j = 0; j < data.length-i; j++) {
         if (data[j] > data[j+1]) {
           swap = data[j];
           data[j] = data[j+1];
           data[j+1] = swap;
+          swapped = true; //swap happened at least once this time through the array
         }
       }
+      if (!swapped) i = data.length; //swap did not happen on the last time through the array = in order
+      else swapped = false; //reseting false;
     }
   }
 

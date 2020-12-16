@@ -28,6 +28,17 @@ public class TestSorts {
     mantest3[4] = 4;
     mantest3[5] = 5;
     Sorts.bubbleSort(mantest3);
+    System.out.println();
+
+    Random ranSeed = new Random();
+    int ranInt = ranSeed.nextInt();
+    System.out.println("Random Seed: " + ranInt);
+    Random ranT = new Random(ranInt);
+    int[] randomTest = new int[10];
+    for (int i = 0; i < randomTest.length; i++){
+      randomTest[i] = ranT.nextInt() % 1000;
+    }
+    Sorts.bubbleSort(randomTest);
   }
 
 }

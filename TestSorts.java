@@ -8,7 +8,7 @@ public class TestSorts {
     mantest1[2] = 12;
     mantest1[3] = -5;
     mantest1[4] = 16;
-    Sorts.bubbleSort(mantest1);
+    Sorts.selectionSort(mantest1);
     System.out.println();
 
     int[] mantest2 = new int[5];
@@ -17,7 +17,7 @@ public class TestSorts {
     mantest2[2] = 4;
     mantest2[3] = 5;
     mantest2[4] = 1;
-    Sorts.bubbleSort(mantest2);
+    Sorts.selectionSort(mantest2);
     System.out.println();
 
     int[] mantest3 = new int[6];
@@ -27,7 +27,7 @@ public class TestSorts {
     mantest3[3] = 3;
     mantest3[4] = 4;
     mantest3[5] = 5;
-    Sorts.bubbleSort(mantest3);
+    Sorts.selectionSort(mantest3);
     System.out.println();
 
     Random ranSeed = new Random();
@@ -38,7 +38,7 @@ public class TestSorts {
     for (int i = 0; i < randomTest.length; i++){
       randomTest[i] = ranT.nextInt() % 1000;
     }
-    Sorts.bubbleSort(randomTest);
+    Sorts.selectionSort(randomTest);
   }
 
 }

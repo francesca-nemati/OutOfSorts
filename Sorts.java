@@ -46,13 +46,14 @@ public class Sorts {
     for (int i = 1; i < data.length; i++) {
       move = data[i];
       for (int j = 0; j <= i; j++) {
-        if (move < data[j]) {
+        if (data[i] < data[j]) {
           for (int k = i; k > j; k--) {
             data[k] = data[k-1];
           }
           data[j] = move;
         }
       }
+      //System.out.println(Arrays.toString(data));
     }
   }
 

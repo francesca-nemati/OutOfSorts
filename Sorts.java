@@ -37,7 +37,7 @@ public class Sorts {
       swap = data[i];
       data[i] = data[smallest];
       data[smallest] = swap;
-      System.out.println(Arrays.toString(data));
+      //System.out.println(Arrays.toString(data));
     }
   }
 

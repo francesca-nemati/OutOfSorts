@@ -29,7 +29,7 @@ public class Sorts {
     int swap;
     for (int i = 0; i < data.length-1; i++) {
       smallest = i;
-      for (int j = i; j < data.length-1; i++) {
+      for (int j = i; j < data.length; j++) {
         if (data[j] < data[smallest]) {
           smallest = j;
         }
@@ -37,6 +37,7 @@ public class Sorts {
       swap = data[i];
       data[i] = data[smallest];
       data[smallest] = swap;
+      System.out.println(Arrays.toString(data));
     }
   }
 
